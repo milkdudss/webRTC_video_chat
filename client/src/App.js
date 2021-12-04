@@ -3,8 +3,8 @@ import { Typography, AppBar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import VideoPlayer from './components/VideoPlayer';
-// import Sidebar from './components/Sidebar';
-// import Notifications from './components/Notifications';
+import Sidebar from './components/Sidebar';
+import Notifications from './components/Notifications';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -41,9 +41,9 @@ const App = () => {
         <Typography variant="h2" align="center">Video Chat</Typography>
       </AppBar>
       <VideoPlayer />
-      {/* <Sidebar>
+      <Sidebar>
         <Notifications />
-      </Sidebar> */}
+      </Sidebar>
     </div>
   );
 };
